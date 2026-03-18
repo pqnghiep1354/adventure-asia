@@ -33,7 +33,7 @@ jobs:
         run: php artisan key:generate
 
       - name: Run tests
-        run: ./vendor/bin/pest --stop-on-failure
+        run: ./vendor/bin/phpunit
 
   deploy-dev:
     name: Deploy to DEV
